@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Services", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Desktop", "MoxIT.Template.Desktop\MoxIT.Template.Desktop.csproj", "{AD9F2E2D-052B-41C7-819F-3DD812BCF922}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Core", "MoxIT.Template.Core\MoxIT.Template.Core.csproj", "{C28C5003-A826-42F0-BCEA-150FC9D8E17A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD9F2E2D-052B-41C7-819F-3DD812BCF922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD9F2E2D-052B-41C7-819F-3DD812BCF922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD9F2E2D-052B-41C7-819F-3DD812BCF922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28C5003-A826-42F0-BCEA-150FC9D8E17A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28C5003-A826-42F0-BCEA-150FC9D8E17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28C5003-A826-42F0-BCEA-150FC9D8E17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28C5003-A826-42F0-BCEA-150FC9D8E17A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
