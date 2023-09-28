@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33927.289
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Services", "MoxIT.Template.Services\MoxIT.Template.Services.csproj", "{B26556D6-DE79-4FFA-A165-D510263A74A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B26556D6-DE79-4FFA-A165-D510263A74A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26556D6-DE79-4FFA-A165-D510263A74A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26556D6-DE79-4FFA-A165-D510263A74A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26556D6-DE79-4FFA-A165-D510263A74A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C646B10-8175-4F89-A313-02C6FD34B1C0}
+	EndGlobalSection
+EndGlobal
