@@ -17,8 +17,10 @@ namespace MoxIT.Template.Desktop
 
         private void Config()
         {
-            var timerConfig = new Timer();
-            timerConfig.Interval = 6000;
+            var timerConfig = new Timer
+            {
+                Interval = 60000// 1 minuto
+            };
             timerConfig.Elapsed += new ElapsedEventHandler((object s, ElapsedEventArgs ea) =>
             {
                 Business();
@@ -46,8 +48,13 @@ namespace MoxIT.Template.Desktop
 
         private void Business()
         {
-            var writeDate = new WriteCurrentDateToFile();
-            writeDate.Write();
+            var path = "output.txt";
+           // var writeDate = new WriteCurrentDateToFile();
+            //writeDate.Write();
+            
+            WriteCurrentDateToFile.ReadFile(path);
+            WriteCurrentDateToFile.WriteFile(path);
+            WriteCurrentDateToFile.ReadAndWriteFile(path);
         }
     }
 }
