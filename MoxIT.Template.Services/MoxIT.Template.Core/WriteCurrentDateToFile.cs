@@ -1,12 +1,17 @@
-﻿using System;
+﻿using NLog;
+using NLog.Fluent;
+using System;
 using System.IO;
 
 namespace MoxIT.Template.Core
 {
     public class WriteCurrentDateToFile
     {
+        private static readonly Logger logger = ConfigNLog.ConfigurationNLog();
+
         public void Write()
         {
+            logger.Info("Iniciando Write");
             try
             {
                 string fileName = "output.txt";
@@ -24,6 +29,8 @@ namespace MoxIT.Template.Core
 
         public static void ReadFile(string filePath)
         {
+            logger.Info("Ejecutando ReadFile");
+
             try
             {
                 // Abrir el archivo en modo de lectura
@@ -31,14 +38,16 @@ namespace MoxIT.Template.Core
                 using (StreamReader reader = new StreamReader(fs))
                 {
                     string content = reader.ReadToEnd();
-                    Console.WriteLine("Contenido del archivo con FileAccess.Read:");
-                    Console.WriteLine(content);
+                    logger.Info("Contenido del archivo con FileAccess.Read:");
+                    logger.Info(content);
                 }
             }
             catch (IOException ex)
             {
-                Console.WriteLine($"Error al leer el archivo: {ex.Message}");
+                logger.Error($"Error al leer el archivo: {ex.Message}");
+                throw ex;
             }
+            logger.Info("ReadFile termino con exito");
         }
 
         public static void WriteFile(string filePath)
@@ -51,12 +60,14 @@ namespace MoxIT.Template.Core
                 {
                     writer.WriteLine("Linea de texto creada con modo FileAccess.Write.");
                 }
-                Console.WriteLine("Archivo creado y escrito con éxito.");
+                logger.Info("Archivo creado y escrito con éxito.");
             }
             catch (IOException ex)
             {
-                Console.WriteLine($"Error al escribir en el archivo: {ex.Message}");
+                logger.Error($"Error al escribir en el archivo: {ex.Message}");
+                throw ex;
             }
+            logger.Info("WriteFile termino con exito");
         }
 
         public static void ReadAndWriteFile(string filePath)
@@ -69,17 +80,19 @@ namespace MoxIT.Template.Core
                 using (StreamWriter writer = new StreamWriter(fs))
                 {
                     string content = reader.ReadToEnd();
-                    Console.WriteLine("Contenido original del archivo:");
-                    Console.WriteLine(content);
+                    logger.Info("Contenido original del archivo:");
+                    logger.Info(content);
 
                     // Escribir algo nuevo al final del archivo
                     writer.WriteLine("Nueva línea escrita en modo FileAccess.ReadWrite.");
                 }
-                Console.WriteLine("Archivo leído y modificado con éxito.");
+                logger.Info("Archivo leído y modificado con éxito.");
+                logger.Info("ReadAndWriteFile termino con exito");
             }
             catch (IOException ex)
             {
-                Console.WriteLine($"Error al leer o escribir en el archivo: {ex.Message}");
+                logger.Error($"Error al leer o escribir en el archivo: {ex.Message}");
+                throw ex;
             }
         }
     }
