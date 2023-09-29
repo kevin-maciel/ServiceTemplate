@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33927.289
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Services", "MoxIT.Template.Services\MoxIT.Template.Services.csproj", "{B26556D6-DE79-4FFA-A165-D510263A74A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Desktop", "MoxIT.Template.Desktop\MoxIT.Template.Desktop.csproj", "{AD9F2E2D-052B-41C7-819F-3DD812BCF922}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Core", "MoxIT.Template.Core\MoxIT.Template.Core.csproj", "{C28C5003-A826-42F0-BCEA-150FC9D8E17A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoxIT.Template.Core.Test", "MoxIT.Template.Core.Test\MoxIT.Template.Core.Test.csproj", "{07766AC9-90B7-4F0E-9ABE-C1E987927926}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C28C5003-A826-42F0-BCEA-150FC9D8E17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C28C5003-A826-42F0-BCEA-150FC9D8E17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C28C5003-A826-42F0-BCEA-150FC9D8E17A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07766AC9-90B7-4F0E-9ABE-C1E987927926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07766AC9-90B7-4F0E-9ABE-C1E987927926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07766AC9-90B7-4F0E-9ABE-C1E987927926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07766AC9-90B7-4F0E-9ABE-C1E987927926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

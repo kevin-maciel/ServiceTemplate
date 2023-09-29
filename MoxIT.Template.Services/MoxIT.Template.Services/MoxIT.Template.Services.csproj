@@ -56,5 +56,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MoxIT.Template.Core\MoxIT.Template.Core.csproj">
+      <Project>{C28C5003-A826-42F0-BCEA-150FC9D8E17A}</Project>
+      <Name>MoxIT.Template.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
