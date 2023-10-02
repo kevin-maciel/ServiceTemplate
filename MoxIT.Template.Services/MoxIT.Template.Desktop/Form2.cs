@@ -11,7 +11,7 @@ namespace MoxIT.Template.Desktop
     public partial class Form2 : Form
     {
         private Timer timer;
-       private static readonly Logger logger = ConfigNLog.ConfigurationNLog();
+        private static readonly Logger logger = ConfigNLog.ConfigurationNLog();
         public Form2()
         {
             InitializeComponent();
@@ -57,14 +57,11 @@ namespace MoxIT.Template.Desktop
 
         private void Business()
         {
-            logger.Info("Ejecutando Business");
-            //var path = "output.txt";
-            string path = ConfigurationManager.AppSettings["path"];
+            logger.Info("Ejecutando Business"); 
             try
             {
-                WriteCurrentDateToFile.ReadFile(path);
-                WriteCurrentDateToFile.WriteFile(path);
-                WriteCurrentDateToFile.ReadAndWriteFile(path);
+                string path = ConfigurationManager.AppSettings["path"];
+                //Llamar a la clase de logica aca
             }
             catch(Exception ex)
             {
